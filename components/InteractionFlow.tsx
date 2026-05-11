@@ -136,7 +136,7 @@ const TicTacToeStep = ({ onComplete }: { onComplete: () => void }) => {
     const [isUserTurn, setIsUserTurn] = useState(true);
     const [winner, setWinner] = useState<string | null>(null);
 
-    const [message, setMessage] = useState("TL3I M3AYA A REHABI ?");
+    const [message, setMessage] = useState("TL3BI M3AYA A LHM9A DYALI ?");
 
     const checkWinner = useCallback((squares: (string | null)[]) => {
         const lines = [
@@ -210,7 +210,7 @@ const TicTacToeStep = ({ onComplete }: { onComplete: () => void }) => {
             setTimeout(() => onComplete(), 3500);
 
         } else if (winner === 'O' || winner === 'draw') {
-            setMessage(winner === 'draw' ? "KTNGHINI 3LIHA KHLITINI" : "REHAB 3WDI U ALWAYS WIN...");
+            setMessage(winner === 'draw' ? "KTBGHINI 3LIHA KHLITINI" : "REHAB 3WDI U ALWAYS WIN...");
 
             setTimeout(() => {
                 setBoard(Array(9).fill(null));
