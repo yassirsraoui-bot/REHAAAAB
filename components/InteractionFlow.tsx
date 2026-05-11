@@ -82,7 +82,7 @@ const LoveModeStep = ({ onComplete }: { onComplete: () => void }) => {
 
                 <div className="flex flex-col items-center space-y-6">
                     <span className={`text-5xl font-playfair transition-colors duration-1000 ${isOn ? 'text-white' : 'text-white/40'}`}>
-                        Princess Mode
+                        IF U LOVE ME PUT IT ON 
                     </span>
 
                     <button
@@ -136,7 +136,7 @@ const TicTacToeStep = ({ onComplete }: { onComplete: () => void }) => {
     const [isUserTurn, setIsUserTurn] = useState(true);
     const [winner, setWinner] = useState<string | null>(null);
 
-    const [message, setMessage] = useState("Can you beat me?");
+    const [message, setMessage] = useState("TL3I M3AYA A REHABI ?");
 
     const checkWinner = useCallback((squares: (string | null)[]) => {
         const lines = [
@@ -210,7 +210,7 @@ const TicTacToeStep = ({ onComplete }: { onComplete: () => void }) => {
             setTimeout(() => onComplete(), 3500);
 
         } else if (winner === 'O' || winner === 'draw') {
-            setMessage(winner === 'draw' ? "KTNGHINI 3LIHA KHLITINI" : "I LOVE UUUU...");
+            setMessage(winner === 'draw' ? "KTNGHINI 3LIHA KHLITINI" : "REHAB 3WDI U ALWAYS WIN...");
 
             setTimeout(() => {
                 setBoard(Array(9).fill(null));
@@ -318,7 +318,7 @@ const LoveMeterStep = ({ onComplete }: { onComplete: () => void }) => {
 
 // --- Step 4: Typewriter ---
 const TypewriterStep = ({ onComplete }: { onComplete: () => void }) => {
-    const text = "I LOVE YOU ❤️";
+    const text = " KNHMA9 3LIK A REHAB ❤️";
 
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
